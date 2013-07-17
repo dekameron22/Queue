@@ -91,6 +91,15 @@ public:
     Queue();
     ~Queue();
     
+    bool isEmpty()
+    {
+        if (stack_for_pop || stack_for_push)
+        {
+            return true;
+        }
+        return false;
+    }
+    
     void push(T value)
     {
         stack_for_push.push_element(value);
@@ -108,9 +117,23 @@ public:
         }
     }
     
+    void copy(Queue help_queue)
+    {
+        while (!isEmpty())
+        {
+            
+        }
+    }
+    
     T getMinimum()
     {
+        Queue enotherQueue;
+        Stack<T> Stack_of_min;
         
+        while (!isEmpty())
+        {
+            
+        }
     }
 };
 
